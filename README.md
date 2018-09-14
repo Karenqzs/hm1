@@ -18,7 +18,7 @@
       function setup() {
         createCanvas(700, 700);
   
-       for (var i = 0; i < 22; i++) {
+       for (var i = 0; i < 20; i++) {
         bubbles.push({
          x: random(width),
          y: random(height),
@@ -36,19 +36,14 @@
         if (dist(mouseX, mouseY, bubble.x, bubble.y) < bubble.radius) {
          
           fill(100, 100, 200, 200);
-        } else
-        {
+        } else{
          fill(100, 100, 200, 200);
           noStroke();
         }
  
-
-      
         ellipse(bubble.x, bubble.y, bubble.radius*2);
         bubble.x += random(-1,2);
-        bubble.y += random(-1,2);
-     
-     
+        bubble.y += random(-1,2);  
        }
         
         if (dist(mouseX, mouseY, bubble.x, bubble.y) > bubble.radius) {
