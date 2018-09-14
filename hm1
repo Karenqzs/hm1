@@ -42,8 +42,8 @@
         }
  
         ellipse(bubble.x, bubble.y, bubble.radius*2);
-        bubble.x += random(-1,2);
-        bubble.y += random(-1,2);  
+        bubble.x += random(-4,4);
+        bubble.y += random(-4,4);  
        }
         
         if (dist(mouseX, mouseY, bubble.x, bubble.y) > bubble.radius) {
